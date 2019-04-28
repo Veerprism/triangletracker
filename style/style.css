@@ -1,0 +1,39 @@
+body{
+  margin-top: 10px;
+  }#side1{
+  width: 338px;
+  border-color: #276030;
+  border-width: thin;
+
+}
+#param1{
+  text-align:left;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: bold;
+  color: #1e1033;
+}
+#side2{
+  width: 338px;
+  border-color: #276030;
+  border-width: thin;
+}
+#side3{
+  width: 338px;
+  border-color: #276030;
+  border-width: thin;
+}
+#triangletracker{
+  align:center;
+}
+.margin{
+
+  width:30%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.properties{
+  margin-top: 60px;
+  text-align: right;
+  padding: 35px;
+}
