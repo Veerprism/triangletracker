@@ -1,0 +1,61 @@
+function classify() {
+  var side1 = document.getElementById('side1').value;
+  var side2 = document.getElementById('side2').value;
+  var side3 = document.getElementById('side3').value;
+
+  var a = parseInt(side1);
+  var b = parseInt(side2);
+  var c = parseInt(side3);
+
+
+
+  var tri_sides = [];
+  tri_sides.push(a);
+  tri_sides.push(b);
+  tri_sides.push(c);
+
+
+
+
+  var sum = 0;
+
+
+  for (var i = 0; i < tri_sides.length; i++) {
+
+    sum += tri_sides[i];
+
+
+  }
+
+
+  var max = Math.max(...tri_sides);
+  var diff = sum - max;
+
+  if (diff<=max){
+    alert("Not a triangle.Please try again.");
+  }
+  else if((a==b) && (a==c) && (b==c)){
+  alert("An equilateral.This has three equal sides.");
+  }
+  else if((a==b) || (a==c) || (b==c)){
+    alert("An isosceles. Has any two sides equal to each other.");
+  }
+  else if ((isNaN(a)) || (isNaN(b)) || (isNaN(c))  ) {
+    alert("Please enter a number.");
+
+  }
+  else{
+    alert("A  scalene. No side is equal to any other.");
+  }
+
+
+
+
+
+
+
+
+
+
+
+};
