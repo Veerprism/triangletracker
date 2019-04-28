@@ -1,28 +1,60 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" >
-    <title>The Triangle Tracker<title>
+
+<head>
+  <meta charset="utf-8">
+  <title>The Triangle Tracker<title>
       <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
       <link rel="stylesheet" href="css/styles.css" type="text/css">
-  </head>
-  <body>
-    <div class="container-fluid mx-auto" >
+</head>
+
+<body>
+  <div class="container-fluid mx-auto">
 
 
     <h1><span>Jasper Migiro</span></h1>
 
-      <div class="row margin">
-        <div class="col-md-12 col-xs-12">
+    <div class="row margin">
+      <div class="col-md-12 col-xs-12">
 
+        <form class="form" id="triangletracker" action="index.html">
 
+          <h5 id="param1">Enter the three sides of the triangle</h5>
 
+          <div class="form-group">
+            <label for="side1">Side One</label> <br>
+            <input class="form-control input-lg" type="text" id="side1" placeholder="The first side" />
+          </div>
+          <div class="form-group">
+            <label for="side2">Side Two</label> <br>
+            <input class="form-control input-lg" type="text" id="side2" placeholder="The second side" />
+          </div>
+          <div class="form-group">
+            <label for="side3">Side Three</label> <br>
+            <input class="form-control input-lg" type="text" id="side3" placeholder="The third side" />
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="button" onclick="classify()" value="Show" />
+            <input type="reset" value="Reset" />
+          </div>
+
+        </form>
+        <br>
 
 
 
       </div>
-    </div>
 
-  </body>
+
+
+
+
+
+    </div>
+  </div>
+
+</body>
+
 </html>
