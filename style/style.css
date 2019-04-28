@@ -80,6 +80,12 @@ border-width: thin;
     margin-right: auto;
 
   }
+  #show{
+    float: left;
+  }
+  #reset{
+    float:left;
+  }
   .properties{
     margin-top: 60px;
     text-align: right;
